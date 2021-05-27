@@ -35,5 +35,3 @@ There are currently ``3`` commands available:
 More Commands coming soon!
 
 ## License
-
-"# Orange" 
