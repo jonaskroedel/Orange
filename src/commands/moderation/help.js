@@ -6,7 +6,8 @@ module.exports = {
     description: 'List all of my commands.',
 
     execute(message, args) {
-        let client = message.client;
+        let client = message.client
+
         const sEmbed = new Discord.MessageEmbed()
             .setColor("GREEN")
             .setTitle(`Help Page for : ${message.guild.name}`)
