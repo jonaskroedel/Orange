@@ -23,6 +23,8 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
+
+    client.user.setActivity(`${prefix}help`, { type: 'LISTENING' })
     console.log(`Logged in as ${client.user.tag}`)
 })
 
