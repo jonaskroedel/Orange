@@ -16,9 +16,9 @@ module.exports = {
                 message.channel.send(':x: Due to Discord Limitations, I cannot delete messages older than 14 days')
             })
 
-            let msg = await message.channel.send(`Deleted \`${amount}\` messages`)
+            let msg1 = await message.channel.send(`Deleted \`${amount}\` messages`)
             setTimeout(() => {
-                msg.delete()
+                msg1.delete()
             }, 2000)
         }
         else {

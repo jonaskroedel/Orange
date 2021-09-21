@@ -9,7 +9,7 @@ module.exports = {
     async execute(message, args) {
         if (!message.member.hasPermission("BAN_MEMBERS")) {
             const member = new message.mentions.first()
-            if (!member.bannable) message.send(`${member} is not bannable`)
+            if (!member.bannable) return message.send(`${member} is not bannable`)
             await member.ban()
             await message.send(`${member} successfully banned!`)
         }
