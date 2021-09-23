@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require('discord.js')
 const got = require('got')
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
         message.react('📝')
 
         const sEmbed = new Discord.MessageEmbed()
-        got('https://www.reddit.com/r/memes/random.json')
+        got(`https://www.reddit.com/r/meme/random.json`)
             .then(response => {
                 const [list] = JSON.parse(response.body)
                 const [post] = list.data.children

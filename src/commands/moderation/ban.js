@@ -1,17 +1,18 @@
-const Discord = require('discord.js')
-const {retryAfterStatusCodes} = require("got/dist/source/core/calculate-retry-delay")
 
 
 module.exports = {
     name: 'ban',
-    description: 'lorem',
+    description: 'Bans mentioned member.',
+    async execute(message) {
+        let banm = message.mentions.members.first()
+        if (banm.id !== message.author.id) {
+            if (!banm.bannable) message.channel.send(`${banm.user} is not bannable.`)
+        }
+        if (banm.id === message.author.id) message.channel.send(`You can't ban yourself!`)
+        if (banm.bannable) {
+            await banm.ban()
+            message.channel.send(`${banm.user} got successfully banned!`)
 
-    async execute(message, args) {
-        if (!message.member.hasPermission("BAN_MEMBERS")) {
-            const member = new message.mentions.first()
-            if (!member.bannable) return message.send(`${member} is not bannable`)
-            await member.ban()
-            await message.send(`${member} successfully banned!`)
         }
     }
 }
