@@ -7,7 +7,6 @@ module.exports = {
 
     execute(message, args) {
         let client = message.client
-
         const sEmbed = new Discord.MessageEmbed()
             .setColor("GREEN")
             .setTitle(`Help Page for : ${message.guild.name}`)
@@ -18,11 +17,13 @@ module.exports = {
                                     **${config.prefix}kick** + \`mentioned user\` kicks the mentioned user from the guild
                                     **${config.prefix}ban** + \`mentioned user\` banns the mentioned user from the guild
                                     \n
-                                    Support me with the bot via: [\`paypal.me/jonaskroedel\`](https://paypal.me/jonaskroedel)` )
+                                    Support me with the bot via: [\`paypal.me/jonaskroedel\`](https://paypal.me/jonaskroedel)`)
             .setThumbnail(client.user.displayAvatarURL())
             .setFooter(`Requested by ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
             .setTimestamp()
         message.channel.send(sEmbed)
         message.delete()
+
+
     }
 }
