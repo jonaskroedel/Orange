@@ -16,6 +16,7 @@ module.exports = {
                                     **${config.prefix}clear** + \`number between 100 and 1\` clears number of messages in the channel
                                     **${config.prefix}kick** + \`mentioned user\` kicks the mentioned user from the guild
                                     **${config.prefix}ban** + \`mentioned user\` banns the mentioned user from the guild
+                                    
                                     \n
                                     Support me with the bot via: [\`paypal.me/jonaskroedel\`](https://paypal.me/jonaskroedel)`)
             .setThumbnail(client.user.displayAvatarURL())

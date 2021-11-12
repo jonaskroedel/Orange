@@ -1,4 +1,4 @@
-# Orange Bot V0.0.1
+# Orange Bot V0.0.5
 
 Orange Bot is a powerful Discord Bot.
 
@@ -27,10 +27,15 @@ This is an ``Open Source`` Project made by [Jonas Krödel](https://github.com/jo
 
 ## Commands
 
-There are currently ``3`` commands available:
+There are currently ``6`` commands available:
 1) ``o!help`` this provides a help page for the bot
 2) ``o!ping`` this shows the latency from the bot
 3) ``o!meme`` this shows a random meme from [Reddit.com/r/memes](https://reddit.com/r/memes/)
+4) ``o!clear`` this deletes a specific number of messages in your current channel
+5) ``o!kick`` this kicks a mentioned user from your current guild
+6) ``o!ban`` this bans a mentioned user from your current guild
+
+- ``o!spam`` this spams a specific number of messages to a mentioned user (please dont use this feature, its only to test anti-spam systems)
 
 More Commands coming soon!
 

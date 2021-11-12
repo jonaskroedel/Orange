@@ -12,11 +12,7 @@ module.exports = {
                 await banm.ban()
                 message.channel.send(`${banm.user} got successfully banned!`)
             } else {
-                let msg2 = await message.channel.send("You don't have enough permissions to execute this command!")
-                setTimeout(() => {
-                    msg2.delete()
-                    message.delete()
-                }, 2000)
+                await message.channel.send("You don't have enough permissions to execute this command!")
             }
         }
     }
