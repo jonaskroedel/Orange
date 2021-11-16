@@ -9,7 +9,7 @@ module.exports = {
         message.react('📝')
         let subreddit = message.content
         let sub = subreddit.slice(7)
-        if (!subreddit) sub = `meme`
+        if (!sub) sub = `meme`
 
         const sEmbed = new Discord.MessageEmbed()
         got(`https://www.reddit.com/r/${sub}/random.json`)
@@ -18,6 +18,7 @@ module.exports = {
                 const [post] = list.data.children
 
                 sEmbed.setTitle(`${post.data.title}`)
+                sEmbed.setDescription(post.data.selftext)
                 sEmbed.setURL(`${post.data.url}`)
                 sEmbed.setColor('RANDOM')
                 sEmbed.setImage(post.data.url)

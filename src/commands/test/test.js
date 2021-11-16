@@ -17,9 +17,9 @@ module.exports = {
         await message.reply(`Success ${userm} will now be spammed!`)
         message.react("👍")
 
-        while (i <= amount) {
+        while (i < amount) {
             setTimeout(async () => {
-                await userm.send(`spam`)
+                await userm.send(`lul`)
             }, 5000)
             i++
         }
