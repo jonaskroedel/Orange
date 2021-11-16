@@ -1,13 +1,21 @@
+const Discord = require('discord.js')
+
 module.exports = {
     name: 'play',
     description: 'plays music',
 
-    execute(message) {
-        if(!message.member.voice.channel) {
-            message.channel.send("Please connect to a voice channel!")
-        } if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) {
-            message.member.voice.channel.join()
-        } else message.member.voice.channel.join()
+    async execute(message, args) {
+        if (!message.member.voice.channel) {
+            let msg = await message.reply("Please connect to a voice channel!")
+            setTimeout(() => {
+                msg.delete()
+            }, 2000)
+        } else {
+            await message.member.voice.channel.join()
+            let msg1 = await message.reply(`Joined your channel...`)
+            setTimeout(() => {
+                msg1.delete()
+            }, 2000)
+        }
     }
 }
-

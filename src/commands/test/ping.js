@@ -9,6 +9,6 @@ module.exports = {
         const msg = await message.channel.send('Pinging...')
         const latency = msg.createdTimestamp - message.createdTimestamp
         msg.edit(`🍊 Bot Latency: \`${latency}ms\``)
-        message.react('🏓')
+        await message.react('🏓')
     }
 }

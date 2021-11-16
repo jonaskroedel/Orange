@@ -7,9 +7,12 @@ module.exports = {
 
     async execute(message, args) {
         message.react('📝')
+        let subreddit = message.content
+        let sub = subreddit.slice(7)
+        if (!subreddit) sub = `meme`
 
         const sEmbed = new Discord.MessageEmbed()
-        got(`https://www.reddit.com/r/meme/random.json`)
+        got(`https://www.reddit.com/r/${sub}/random.json`)
             .then(response => {
                 const [list] = JSON.parse(response.body)
                 const [post] = list.data.children
