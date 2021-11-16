@@ -2,13 +2,13 @@ const Discord = require('discord.js')
 const got = require('got')
 
 module.exports = {
-    name: 'meme',
+    name: 'reddit',
     description: 'Sends a random meme from https://reddit.com/r/memes',
 
     async execute(message, args) {
         message.react('📝')
         let subreddit = message.content
-        let sub = subreddit.slice(7)
+        let sub = subreddit.slice(11)
         if (!sub) sub = `meme`
 
         const sEmbed = new Discord.MessageEmbed()

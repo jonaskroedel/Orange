@@ -12,7 +12,7 @@ module.exports = {
             .setTitle(`Help Page for : ${message.guild.name}`)
             .setDescription(`**${config.prefix}help** - Shows this Page 
                                     **${config.prefix}ping** - Shows the Latency from the \`Bot\`
-                                    **${config.prefix}meme** - Sends a random Meme from [\`reddit.com/r/memes\`](https://reddit.com/r/memes)
+                                    **${config.prefix}reddit** - Sends a random Meme from [\`reddit.com/r/memes\`](https://reddit.com/r/memes) or + r/\`subreddit\` to get a meme from there
                                     **${config.prefix}clear** + \`number between 100 and 1\` clears number of messages in the channel
                                     **${config.prefix}kick** + \`mentioned user\` kicks the mentioned user from the guild
                                     **${config.prefix}ban** + \`mentioned user\` banns the mentioned user from the guild

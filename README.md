@@ -30,7 +30,7 @@ This is an ``Open Source`` Project made by [Jonas Krödel](https://github.com/jo
 There are currently ``6`` commands available:
 1) ``o!help`` this provides a help page for the bot
 2) ``o!ping`` this shows the latency from the bot
-3) ``o!meme`` this shows a random meme from [Reddit.com/r/memes](https://reddit.com/r/memes/)
+3) ``o!reddit`` this shows a random meme from [Reddit.com/r/memes](https://reddit.com/r/memes/) or + r/__subreddit__ to get a meme from there
 4) ``o!clear`` this deletes a specific number of messages in your current channel
 5) ``o!kick`` this kicks a mentioned user from your current guild
 6) ``o!ban`` this bans a mentioned user from your current guild
