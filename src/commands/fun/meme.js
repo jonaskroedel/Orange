@@ -21,7 +21,7 @@ module.exports = {
                 sEmbed.setURL(`${post.data.url}`)
                 sEmbed.setColor('RANDOM')
                 sEmbed.setImage(post.data.url)
-                sEmbed.setFooter(`⬆️${post.data.ups}     🗨️${post.data.num_comments}`)
+                sEmbed.setFooter(`⬆️${post.data.ups}      🗨️${post.data.num_comments}`)
                 sEmbed.setTimestamp()
 
                 message.channel.send(sEmbed)
