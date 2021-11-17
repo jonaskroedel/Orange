@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "command": "0.0.5",
     "discord.js": "^12.5.3",
     "got": "^11.8.2",
     "moment": "^2.29.1",

@@ -3,19 +3,20 @@ const config = require('../../../config.json')
 
 module.exports = {
     name: 'help',
-    description: 'List all of my commands.',
+    description: 'List all of commands',
 
     execute(message, args) {
         let client = message.client
         const sEmbed = new Discord.MessageEmbed()
             .setColor("GREEN")
             .setTitle(`Help Page for : ${message.guild.name}`)
-            .setDescription(`**${config.prefix}help** - Shows this Page 
-                                    **${config.prefix}ping** - Shows the Latency from the \`Bot\`
-                                    **${config.prefix}reddit** - Sends a random Meme from [\`reddit.com/r/memes\`](https://reddit.com/r/memes) or + r/\`subreddit\` to get a meme from there
-                                    **${config.prefix}clear** + \`number between 100 and 1\` clears number of messages in the channel
-                                    **${config.prefix}kick** + \`mentioned user\` kicks the mentioned user from the guild
-                                    **${config.prefix}ban** + \`mentioned user\` banns the mentioned user from the guild
+            .setDescription(`
+                                    **${config.prefix}${require('../moderation/help.js').name}** ${require('../moderation/help.js').description} 
+                                    **${config.prefix}${require('../test/ping.js').name}** ${require('../test/ping.js').description}
+                                    **${config.prefix}${require('../fun/meme.js').name}** ${require('../fun/meme.js').description}
+                                    **${config.prefix}${require('../moderation/clear.js').name}** ${require('../moderation/clear.js').description}
+                                    **${config.prefix}${require('../moderation/kick.js').name}** ${require('../moderation/kick.js').description}
+                                    **${config.prefix}${require('../moderation/ban.js').name}** ${require('../moderation/ban.js').description}
                                     
                                     \n
                                     Support me with the bot via: [\`paypal.me/jonaskroedel\`](https://paypal.me/jonaskroedel)`)

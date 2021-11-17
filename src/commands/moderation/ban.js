@@ -1,6 +1,6 @@
 module.exports = {
     name: 'ban',
-    description: 'Bans mentioned member.',
+    description: 'Bans mentioned member',
     async execute(message) {
         let banm = message.mentions.members.first()
         if (!message.member.hasPermission("BAN_MEMBERS")) {
