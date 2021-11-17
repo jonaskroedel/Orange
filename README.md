@@ -40,5 +40,5 @@ There are currently ``6`` commands available:
 More Commands coming soon! 
 <br>
 
-And if you want to support me, than don't hesitate to donate me one [paypal.me/jonaskroedel](https://paypal.me/jonaskroedel)
+And if you want to support me, than don't hesitate to donate me on [paypal.me/jonaskroedel](https://paypal.me/jonaskroedel)
 ## License
