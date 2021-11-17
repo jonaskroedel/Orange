@@ -14,6 +14,7 @@ module.exports = {
             }
         } else {
             await message.channel.send("You don't have enough permissions to execute this command!")
+            message.delete()
         }
     }
 }

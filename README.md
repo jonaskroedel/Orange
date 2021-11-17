@@ -1,4 +1,4 @@
-# Orange Bot V0.0.5
+# Orange Bot V0.1.0 beta
 
 Orange Bot is a powerful Discord Bot.
 
@@ -37,6 +37,8 @@ There are currently ``6`` commands available:
 
 - ``o!spam`` this spams a specific number of messages to a mentioned user (please dont use this feature, its only to test anti-spam systems)
 
-More Commands coming soon!
+More Commands coming soon! 
+<br>
 
+And if you want to support me, than don't hesitate to donate me one [paypal.me/jonaskroedel](https://paypal.me/jonaskroedel)
 ## License
