@@ -27,13 +27,14 @@ This is an ``Open Source`` Project made by [Jonas Krödel](https://github.com/jo
 
 ## Commands
 
-There are currently ``6`` commands available:
+There are currently ``7`` commands available:
 1) ``o!help`` this provides a help page for the bot
 2) ``o!ping`` this shows the latency from the bot
 3) ``o!reddit`` this shows a random meme from [Reddit.com/r/memes](https://reddit.com/r/memes/) or + r/__subreddit__ to get a meme from there
 4) ``o!clear`` this deletes a specific number of messages in your current channel
 5) ``o!kick`` this kicks a mentioned user from your current guild
 6) ``o!ban`` this bans a mentioned user from your current guild
+7) ``o!del`` this clears the whole channel by cloning and deleting it
 
 - ``o!spam`` this spams a specific number of messages to a mentioned user (please dont use this feature, its only to test anti-spam systems)
 
