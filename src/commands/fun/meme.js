@@ -3,7 +3,7 @@ const got = require('got')
 
 module.exports = {
     name: 'reddit',
-    description: 'Sends a random meme from https://reddit.com/r/memes or r/`subreddit`',
+    description: 'Sends a random meme from [\`reddit.com/r/memes\`](https://reddit.com/r/memes) or r/`subreddit`',
 
     async execute(message, args) {
         message.react('📝')

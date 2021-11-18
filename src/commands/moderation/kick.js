@@ -1,6 +1,6 @@
 module.exports = {
     name: 'kick',
-    description: 'Kicks mentioned member',
+    description: 'Kicks the `mentioned` member',
     async execute(message) {
         if (message.member.hasPermission("KICK_MEMBERS")) {
             let kickm = message.mentions.members.first()

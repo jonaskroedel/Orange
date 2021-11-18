@@ -3,7 +3,7 @@ const Config = require('../../../config.json')
 
 module.exports = {
     name: 'ping',
-    description: 'Shows the latency from the bot',
+    description: 'Sends the latency from this bot in `ms`',
 
     async execute(message, args) {
         const msg = await message.channel.send('Pinging...')

@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports = {
     name: 'play',
-    description: 'plays music',
+    description: 'plays music (currently not working it only joins the voice)',
 
     async execute(message, args) {
         if (!message.member.voice.channel) {
