@@ -15,6 +15,7 @@ module.exports = {
                                      
                                     **${config.prefix}${require('../test/ping.js').name}** ${require('../test/ping.js').description} 
                                     **${config.prefix}${require('../fun/meme.js').name}** ${require('../fun/meme.js').description} 
+                                    **${config.prefix}${require('../fun/userinfo.js').name}** ${require('../fun/userinfo.js').description} 
                                     **${config.prefix}${require('../moderation/clear.js').name}** ${require('../moderation/clear.js').description}
                                     **${config.prefix}${require('../moderation/clearChannel.js').name}** ${require('../moderation/clearChannel.js').description}
                                     
