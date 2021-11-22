@@ -16,11 +16,15 @@ module.exports = {
                                     **${config.prefix}${require('../test/ping.js').name}** ${require('../test/ping.js').description} 
                                     **${config.prefix}${require('../fun/meme.js').name}** ${require('../fun/meme.js').description} 
                                     **${config.prefix}${require('../fun/userinfo.js').name}** ${require('../fun/userinfo.js').description} 
-                                    **${config.prefix}${require('../moderation/clear.js').name}** ${require('../moderation/clear.js').description}
-                                    **${config.prefix}${require('../moderation/clearChannel.js').name}** ${require('../moderation/clearChannel.js').description}
+                                    **${config.prefix}${require('../moderation/clear.js').name}** ${require('../moderation/clear.js').description} 
+                                    **->** ${message.member.hasPermission("MANAGE_MESSAGES") ? '`you can execute this command!`' : "`you can't execute this command!`"}
+                                    **${config.prefix}${require('../moderation/clearChannel.js').name}** ${require('../moderation/clearChannel.js').description} 
+                                    **->** ${message.member.hasPermission("MANAGE_MESSAGES") ? '`you can execute this command!`' : "`you can't execute this command!`"}
                                     
                                     **${config.prefix}${require('../moderation/kick.js').name}** ${require('../moderation/kick.js').description} 
-                                    **${config.prefix}${require('../moderation/ban.js').name}** ${require('../moderation/ban.js').description}
+                                    **->** ${message.member.hasPermission("KICK_MEMBERS") ? '`you can execute this command!`' : "`you can't execute this command!`"}
+                                    **${config.prefix}${require('../moderation/ban.js').name}** ${require('../moderation/ban.js').description} 
+                                    **->** ${message.member.hasPermission("BAN_MEMBERS") ? '`you can execute this command!`' : "`you can't execute this command!`"}
                                      
                                     **${config.prefix}${require('../music/play.js').name}** ${require('../music/play.js').description} 
                                     **${config.prefix}${require('../music/leave.js').name}** ${require('../music/leave.js').description} 

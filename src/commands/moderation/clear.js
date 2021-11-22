@@ -3,7 +3,7 @@ const config = require('../../../config.json')
 
 module.exports = {
     name: 'clear',
-    description: 'Clears a `specific` number of messages in the `current` channel',
+    description: 'Clears a number of messages in the channel',
 
     async execute(message, args) {
         if (message.member.hasPermission("MANAGE_MESSAGES")) {
