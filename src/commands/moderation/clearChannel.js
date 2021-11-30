@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const config = require('../../../config.json')
 
 module.exports = {
-    name: 'del',
+    name: 'clearchannel',
     description: 'Clears the `whole` Channel',
 
     async execute(message, args) {

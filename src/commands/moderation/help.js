@@ -30,6 +30,7 @@ module.exports = {
                                     **${config.prefix}${require('../music/leave.js').name}** ${require('../music/leave.js').description} 
                                     
                                     \n
+                                    Bot made by <@521023008706658304>
                                     Support me with the bot via: [\`paypal.me/jonaskroedel\`](https://paypal.me/jonaskroedel)`)
             .setThumbnail(client.user.displayAvatarURL())
             .setFooter(`Requested by ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
