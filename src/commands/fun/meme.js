@@ -7,6 +7,7 @@ module.exports = {
 
     async execute(message, args) {
         message.react('📝')
+        let msg1
         let subreddit = message.content
         let sub = subreddit.slice(9)
         if (!sub) sub = `meme`
@@ -27,6 +28,14 @@ module.exports = {
 
                 message.channel.send(sEmbed)
             })
-            .catch(console.error)
+            .catch(e => {
+                    console.error(e)
+                    message.reply(`${sub} does not exist. What the heck is this?`)
+                        .then(msg => {
+                            setTimeout(() => msg.delete(), 2000)
+                        })
+                    message.delete()
+                }
+            )
     }
 }
