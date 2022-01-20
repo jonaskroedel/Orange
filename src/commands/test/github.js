@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const Config = require('../../../config.json')
 
 module.exports = {
-    name: 'github',
+    name: 'repo',
     description: 'Sends github repo link',
 
     async execute(message, args) {
